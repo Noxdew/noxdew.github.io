@@ -39,6 +39,7 @@ $(function() {
         });
     }
 });
+
 // Scroll
 $(function() {
     $(document).on("scroll", onScroll);
@@ -88,4 +89,10 @@ $(function() {
             }
         });
     }
+});
+
+$(function() {
+    $("#menubtn").click(function(){
+        $(this).toggleClass("open");
+    });
 });
