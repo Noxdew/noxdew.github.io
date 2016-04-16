@@ -1,6 +1,5 @@
 @charset "UTF-8";
 .navicon-button {
-  display: inline-block;
   position: relative;
   padding: 2.0625rem 1.5rem;
   transition: 0.25s;
