@@ -19,12 +19,14 @@
     <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/images/manifest.json">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#194d4d">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#4d516e">
     <link rel="shortcut icon" href="/images/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="apple-mobile-web-app-title" content="Noxdew">
+    <meta name="application-name" content="Noxdew">
+    <meta name="msapplication-TileColor" content="#4d516e">
     <meta name="msapplication-TileImage" content="/images/mstile-144x144.png">
     <meta name="msapplication-config" content="/images/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#4d516e">
 
     <script type="text/javascript" src="//code.jquery.com/jquery-2.2.3.js"></script>
 		<script type="text/javascript" src="javascripts/TweenLite.js"></script>
@@ -65,8 +67,8 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li class="color-btn"><a href="#home">The Studio</a></li>
-            <li class="color-btn"><a href="#work">Our work</a></li>
+            <li class="color-btn"><a href="#home">Noxdew</a></li>
+            <li class="color-btn"><a href="#work">What We Do</a></li>
             <li class="color-btn"><a href="#portfolio">Portfolio</a></li>
             <li class="color-btn"><a href="#footer">Contact us</a></li>
           </ul>
@@ -80,16 +82,18 @@
     <div class="container body-text" style="margin-top: 50px; z-index: 1" id="main">
       <div class="fill-screen" id="home">
         <div class="text-center">
-          <img alt="Brand" src="images/logo.png" height="150px" style="padding-top: 40px">
-          <h1 class="main-title glow" style="padding-top: 20px; padding-bottom: 40px">Noxdew Development</h1>
-          <h3>We are a small team dedicated to building scalable and innovative software and web applications.</h3>
+          <img alt="Brand" src="images/logo.png" height="200px" style="padding-top: 40px; z-index: 1" />
+          <h1 class="main-title" style="padding-top: 20px; padding-bottom: 40px">Noxdew Development</h1>
+          <h3 style="line-height: 35px">We are a small team of developers dedicated to building scalable and innovative software, with industry experience in both web development and bespoke software delivery.</h3>
         </div>
       </div>
 
       <div class="col-md-12 text-center fill-screen" id="work">
         <div style="padding-bottom: 100px;">
-          <h1 class="blue-title glow">What We Do</h1>
-          We provide a wide range of software, web and game development solutions, as well as continuous maintenance. Even if your exact need is not mentioned here, do not hesitate to contact us at <a href="mailto:hello@noxdew.com" target="_top">hello@noxdew.com</a>
+          <h1 class="blue-title">What We Do</h1>
+          <div style="font-size: 1.2em">
+            We provide a wide range of software products, from web solutions and game development to bespoke software. You would not even need to worry about the products after they are deployed as we can also provide continuous maintenance. Even if your exact needs are not mentioned here, do not hesitate to contact us at <a class="blue-title" href="mailto:hello@noxdew.com" target="_top">hello@noxdew.com</a>
+          </div>
         </div>
 
         <div class="col-md-4 text-center animateWhenEnter">
@@ -97,44 +101,46 @@
             <i class="fa fa-code fa-3x" aria-hidden="true"></i>
           </div>
           <h4 class="blue-title">Software</h4>
-          Building stable applications is what we do best. Lets discuss your ideas and needs and we can provide a solution and maintain it.
+          We offer stable and maintainable bespoke applications that can cover your specific needs. Just contact us with your requirements and describe your ideas.
         </div>
         <div class="col-md-4 text-center animateWhenEnter">
           <div class="blue-title glow" style="margin-top: 25px">
             <i class="fa fa-sitemap fa-3x" aria-hidden="true"></i>
           </div>
           <h4 class="blue-title">Web applications</h4>
-          As the web evolves the demand of dynamic increases, but don't worry, we are here to help. We can take your idea, design the website for your business, build it and continue to maintain it. We will also take off the hassle from you and handle all the domain registration and setup.
+          As the web evolves the demand for dynamic web applications increases, but don't worry, we are here to help. We can take your idea, design the website for your business, build it and continue to maintain it.
         </div>
         <div class="col-md-4 text-center animateWhenEnter">
           <div class="blue-title glow" style="margin-top: 25px">
             <i class="fa fa-gamepad fa-3x" aria-hidden="true"></i>
           </div>
           <h4 class="blue-title">Entertainment</h4>
-          If you are looking for a team to develop your great idea for the next big game, we can help. From our previus experience of game design and development we can help you take your idea to the market.
+          If you are looking for a team to develop your great idea for the next big game, we can help. From our previus experience in game design and development we can take your idea to the market.
         </div>
       </div>
 
       <div class="col-md-12 text-center fill-screen" style="margin-top: 50px" id="portfolio">
         <div style="padding-bottom: 100px;">
-          <h1 class="other-title glow">Portfolio</h1>
-          Check out what we have been doing so far. From entertainment to work management tools we have everything!
+          <h1 class="other-title">Portfolio</h1>
+          <div style="font-size: 1.2em">
+            Have a look at what we have done so far. Our experiments have resulted in some pretty neat applications.
+          </div>
         </div>
 
         <div class="col-md-6 text-center animateWhenEnter">
           <div class="other-title glow" style="margin-top: 25px">
-            <img alt="Brand" src="images/letscrum-logo.png" height="45px">
+            <img alt="LetScrum" src="images/letscrum-logo.png" height="45px">
             <!-- <i class="fa fa-tasks fa-3x" aria-hidden="true"></i> -->
           </div>
           <h4 class="other-title">LetScrum</h4>
-          Here at Noxdew we couldn't find a scrum board application which suits our needs. Our solution was to develop our own. LetScrum is a digital, highly customiseable scrum board. We always listen to feedback, so if you want to report a bug, suggest a feature or a change don't hesitate to contact us.
+          Here at Noxdew we couldn't find a scrum board application to suit our needs. Our solution was to develop our own. LetScrum is a digital, highly customiseable scrum board. We always listen to feedback, so if you want to report a bug, suggest a feature or a change don't hesitate to use the feedback form in the application.
         </div>
         <div class="col-md-6 text-center animateWhenEnter">
           <div class="other-title glow" style="margin-top: 25px">
             <i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
           </div>
           <h4 class="other-title">New game <span class="greyed">(Coming soon)</span></h4>
-          You will never be bored again! In our new game you will have the chance to control a rope trying to dodge obstacles in an increasingly difficult infinite challenge.
+          You will never be bored again! Our upcoming game will include fast paced, arcade style gameplay with ever increasing difficulty.
         </div>
       </div>
     </div>
