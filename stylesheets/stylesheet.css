@@ -958,3 +958,26 @@ footer {
 .footer-title-glow {
   text-shadow: 0 0 3px rgba(255, 255, 255, .75);
 }
+
+.letscrum-button-container {
+  margin-top: 20px;
+  font-size: 1.3em;
+}
+.letscrum-button{
+  padding: 7px !important;
+  background-color: rgb(17, 56, 110);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+a.letscrum-button, a.letscrum-button:visited {
+  color: #93B6F2;
+  border-bottom: none;
+  padding-bottom: 7px !important;
+}
+
+a.letscrum-button:hover, a.letscrum-button.active {
+  border-bottom: none;
+  text-decoration: none;
+  padding-bottom: 7px !important;
+}

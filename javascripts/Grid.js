@@ -57,7 +57,6 @@
 
         for (var i = maximumIndex - 1; i >= 0; i--) {
             if (scrollValue > colorChange[i][0]) {
-                console.log(scrollValue)
                 if (i == maximumIndex - 1) {
                     strokecolor = colorToString.apply(this, colorChange[i].slice(1));
                     background.css("background-color", "rgb(" + colorToString.apply(this, bgColorChange[i].slice(1)) + ")");
