@@ -469,6 +469,20 @@ header h2 {
   letter-spacing: 0;
 }
 
+#navbar a, #navbar a:visited {
+  color: white;
+  background-color: #3f404d;
+  padding-bottom: 12px !important;
+}
+
+#navbar a:hover, #navbar a.active {
+  padding-bottom: 12px !important;
+}
+
+#navbar a.active {
+  color: white;
+}
+
 .inner {
   position: relative;
   width: 940px;
@@ -736,7 +750,6 @@ dl dd {
 footer {
   padding-top: 20px;
   padding-bottom: 30px;
-  margin-top: 40px;
   font-size: 13px;
   color: #aaa;
   background: transparent url('../images/hr.png') 0 0 no-repeat;
@@ -872,26 +885,19 @@ footer a:hover {
 @media only screen and (max-width: 479px) { }
 
 .color-bg {
-  background-color: rgb(237, 245, 249);
+  background-color: white;
 }
 
 .color-nav {
-  background-color: rgba(60, 64, 96, 0.9);
+  background-color: rgb(63, 64, 77);
 }
 
 a, a:visited {
   color: #93B6F2;
-  border-bottom: 3px solid transparent;
   padding-bottom: 12px !important;
-
-  -webkit-transition : border 500ms ease-out;
-  -moz-transition : border 500ms ease-out;
-  -o-transition : border 500ms ease-out;
-  transition : border 500ms ease-out;
 }
 
 a:hover, a.active {
-  border-bottom: 3px solid #93B6F2;
   padding-bottom: 12px !important;
 }
 
@@ -900,12 +906,12 @@ a:hover, a.active {
 }
 
 .main-title {
-  color: rgb(25, 77, 77);
+  color: rgb(63, 64, 77);
 }
 
 .blue-title {
   padding-bottom: 15px;
-  color: rgb(68, 73, 136);
+  color: rgb(17, 56, 110);
 }
 
 .other-title {
@@ -939,8 +945,6 @@ footer a, footer a:visited {
 }
 footer a:hover {
   color: #93B6F2;
-  text-decoration: none;
-  border-bottom: 3px solid #93B6F2;
 }
 
 footer {
@@ -964,20 +968,42 @@ footer {
   font-size: 1.3em;
 }
 .letscrum-button{
-  padding: 7px !important;
-  background-color: rgb(17, 56, 110);
+  background-color: rgb(79, 81, 96);
   cursor: pointer;
   border-radius: 5px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 a.letscrum-button, a.letscrum-button:visited {
-  color: #93B6F2;
+  color: white;
   border-bottom: none;
-  padding-bottom: 7px !important;
 }
 
 a.letscrum-button:hover, a.letscrum-button.active {
   border-bottom: none;
   text-decoration: none;
-  padding-bottom: 7px !important;
+  background-color: rgb(81, 81, 122);
+}
+
+.section {
+  width: 100%;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.section.one {
+  background-color: white;
+}
+
+.section.two {
+  background-color: #f9f9f9;
+}
+
+.heroimage {
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

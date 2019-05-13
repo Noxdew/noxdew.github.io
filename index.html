@@ -31,7 +31,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-2.2.3.js"></script>
 		<script type="text/javascript" src="javascripts/TweenLite.js"></script>
 		<script type="text/javascript" src="javascripts/Ease.js"></script>
-    <script type="text/javascript" src="javascripts/Grid.js"></script>
+    <!-- <script type="text/javascript" src="javascripts/Grid.js"></script> -->
 		<script type="text/javascript" src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -56,7 +56,7 @@
     <canvas id="bgcanvas" style="position: absolute; top: 50; left: 0;"></canvas>
 
     <nav class="navbar color-nav navbar-fixed-top" style="border-radius: 0">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
           <button class="navicon-button uarr navbar-toggle collapsed" aria-label="Toggle Navigation" id="menubtn" data-target="#navbar" data-toggle="collapse" aria-expanded="false">
             <div class="navicon"></div>
@@ -79,71 +79,84 @@
       </div>
     </nav>
 
-    <div class="container body-text" style="margin-top: 50px; z-index: 1" id="main">
-      <div class="fill-screen" id="home">
-        <div class="text-center">
+    <div class="body-text" style="margin-top: 50px; z-index: 1" id="main">
+      <div class="section one heroimage" id="home">
+        <div class="container text-center">
           <img alt="Brand" src="images/logo.png" height="200px" style="padding-top: 40px; z-index: 1" />
           <h1 class="main-title" style="padding-top: 20px; padding-bottom: 40px">Noxdew Development</h1>
-          <h3 style="line-height: 35px">We are a small team of developers dedicated to building scalable and innovative software, with industry experience in both web development and bespoke software delivery.</h3>
+          <h3 class="main-title" style="line-height: 35px">We are a small team of developers dedicated to building scalable and innovative software, with industry experience in both web development and bespoke software delivery.</h3>
         </div>
       </div>
 
-      <div class="col-md-12 text-center fill-screen" id="work">
-        <div style="padding-bottom: 100px;">
-          <h1 class="blue-title">What We Do</h1>
-          <div style="font-size: 1.2em">
-            We provide a wide range of software products, from web solutions and game development to bespoke software. You will not even need to worry about the products after they are deployed as we can also provide continuous maintenance. Even if your exact needs are not mentioned here, do not hesitate to contact us at <a class="blue-title" href="mailto:team@noxdew.com" target="_top">team@noxdew.com</a>
+      <div class="text-center section one" id="work">
+        <div class="container">
+          <div style="padding-bottom: 100px;">
+            <h1 class="blue-title">What We Do</h1>
+            <div style="font-size: 1.2em">
+              We provide a wide range of software products, from web solutions and game development to bespoke software. You will
+              not even need to worry about the products after they are deployed as we can also provide continuous maintenance.
+              Even if your exact needs are not mentioned here, do not hesitate to contact us at <a class="blue-title"
+                href="mailto:team@noxdew.com" target="_top">team@noxdew.com</a>
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-4 text-center animateWhenEnter">
-          <div class="blue-title glow" style="margin-top: 25px">
-            <i class="fa fa-code fa-3x" aria-hidden="true"></i>
+          <div class="col-md-4 text-center animateWhenEnter">
+            <div class="blue-title glow" style="margin-top: 25px">
+              <i class="fa fa-code fa-3x" aria-hidden="true"></i>
+            </div>
+            <h4 class="blue-title">Software</h4>
+            We offer stable and maintainable bespoke applications that can cover your specific needs. Just contact us with your
+            requirements and tell us about your ideas.
           </div>
-          <h4 class="blue-title">Software</h4>
-          We offer stable and maintainable bespoke applications that can cover your specific needs. Just contact us with your requirements and tell us about your ideas.
-        </div>
-        <div class="col-md-4 text-center animateWhenEnter">
-          <div class="blue-title glow" style="margin-top: 25px">
-            <i class="fa fa-sitemap fa-3x" aria-hidden="true"></i>
+          <div class="col-md-4 text-center animateWhenEnter">
+            <div class="blue-title glow" style="margin-top: 25px">
+              <i class="fa fa-sitemap fa-3x" aria-hidden="true"></i>
+            </div>
+            <h4 class="blue-title">Web applications</h4>
+            As the web evolves the demand for dynamic web applications increases. Don't worry, we are here to help. We can
+            take your idea, design the website for your business, build it and continue to maintain it.
           </div>
-          <h4 class="blue-title">Web applications</h4>
-          As the web evolves the demand for dynamic web applications increases, but don't worry, we are here to help. We can take your idea, design the website for your business, build it and continue to maintain it.
-        </div>
-        <div class="col-md-4 text-center animateWhenEnter">
-          <div class="blue-title glow" style="margin-top: 25px">
-            <i class="fa fa-gamepad fa-3x" aria-hidden="true"></i>
+          <div class="col-md-4 text-center animateWhenEnter">
+            <div class="blue-title glow" style="margin-top: 25px">
+              <i class="fa fa-gamepad fa-3x" aria-hidden="true"></i>
+            </div>
+            <h4 class="blue-title">Entertainment</h4>
+            If you are looking for a team to develop your great idea for the next big game, we can help. From our previous
+            experience in game design and development we can take your idea to the market.
           </div>
-          <h4 class="blue-title">Entertainment</h4>
-          If you are looking for a team to develop your great idea for the next big game, we can help. From our previous experience in game design and development we can take your idea to the market.
         </div>
       </div>
 
-      <div class="col-md-12 text-center fill-screen" style="margin-top: 50px" id="portfolio">
-        <div style="padding-bottom: 100px;">
-          <h1 class="other-title">Portfolio</h1>
-          <div style="font-size: 1.2em">
-            Have a look at what we have done so far. Our experiments have resulted in some pretty neat applications.
+      <div class="text-center section two" id="portfolio">
+        <div class="container">
+          <div style="padding-bottom: 100px;">
+            <h1 class="other-title">Portfolio</h1>
+            <div style="font-size: 1.2em">
+              Have a look at what we have done so far. Our experiments have resulted in some pretty neat applications.
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-6 text-center animateWhenEnter">
-          <div class="other-title glow" style="margin-top: 25px">
-            <img alt="LetScrum" src="images/letscrum-logo.png" height="45px">
-            <!-- <i class="fa fa-tasks fa-3x" aria-hidden="true"></i> -->
+          <div class="col-md-6 text-center animateWhenEnter">
+            <div class="other-title glow" style="margin-top: 25px">
+              <img alt="LetScrum" src="images/letscrum-logo.png" height="45px">
+              <!-- <i class="fa fa-tasks fa-3x" aria-hidden="true"></i> -->
+            </div>
+            <h4 class="other-title">LetScrum</h4>
+            Here at Noxdew we couldn't find a scrum board application to suit our needs. Our solution was to develop our own.
+            LetScrum is a digital, highly customisable scrum board. We always listen to feedback, so if you want to report a bug,
+            suggest a feature or a change don't hesitate to use the feedback form in the application.
+            <div class="letscrum-button-container">
+              <a class="letscrum-button" target="_blank" href="http://letscrum.co.uk">Try it for free</a>
+            </div>
           </div>
-          <h4 class="other-title">LetScrum</h4>
-          Here at Noxdew we couldn't find a scrum board application to suit our needs. Our solution was to develop our own. LetScrum is a digital, highly customisable scrum board. We always listen to feedback, so if you want to report a bug, suggest a feature or a change don't hesitate to use the feedback form in the application.
-          <div class="letscrum-button-container">
-            <a class="letscrum-button" target="_blank" href="http://letscrum.co.uk">Try it for free</a>
+          <div class="col-md-6 text-center animateWhenEnter">
+            <div class="other-title glow" style="margin-top: 25px">
+              <i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
+            </div>
+            <h4 class="other-title">New game <span class="greyed">(Coming soon)</span></h4>
+            You will never be bored again! Our upcoming game will include fast paced, arcade style gameplay with ever increasing
+            difficulty.
           </div>
-        </div>
-        <div class="col-md-6 text-center animateWhenEnter">
-          <div class="other-title glow" style="margin-top: 25px">
-            <i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
-          </div>
-          <h4 class="other-title">New game <span class="greyed">(Coming soon)</span></h4>
-          You will never be bored again! Our upcoming game will include fast paced, arcade style gameplay with ever increasing difficulty.
         </div>
       </div>
     </div>
@@ -151,10 +164,10 @@
     <footer id="footer" class="footer-text">
       <div class="container">
         <div class="col-md-5 text-center">
-          <h5>Contact us at: <a href="mailto:team@noxdew.com" target="_top">team@noxdew.com</a></h5>
+          <h5>Contact us: <a href="mailto:team@noxdew.com" target="_top">team@noxdew.com</a></h5>
         </div>
         <div class="col-md-5 col-md-offset-2 text-center">
-          <h5>Created with <i class="fa fa-heart heart" aria-hidden="true"></i> by <span class="footer-title-glow">Noxdew Development</span> <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017</h5>
+          <h5>Created with <i class="fa fa-heart heart" aria-hidden="true"></i> by <span class="footer-title-glow">Noxdew Development</span> <i class="fa fa-copyright" aria-hidden="true"></i> Copyright <span id="year">2019</span></h5>
         </div>
       </div>
     </footer>
