@@ -906,7 +906,8 @@ a:hover, a.active {
 }
 
 .main-title {
-  color: rgb(63, 64, 77);
+  /* color: rgb(63, 64, 77); */
+  color: white;
 }
 
 .blue-title {
@@ -991,6 +992,10 @@ a.letscrum-button:hover, a.letscrum-button.active {
   width: 100%;
   padding-bottom: 100px;
   padding-top: 100px;
+}
+
+.section.title {
+  background-color: #797a98;
 }
 
 .section.one {
