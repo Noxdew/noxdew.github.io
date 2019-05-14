@@ -469,18 +469,25 @@ header h2 {
   letter-spacing: 0;
 }
 
+#navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 #navbar a, #navbar a:visited {
   color: white;
-  background-color: #3f404d;
+  padding-bottom: 12px !important;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+#navbar.top a, #navbar.top a:visited {
+  color: #3f404d;
   padding-bottom: 12px !important;
 }
 
-#navbar a:hover, #navbar a.active {
+#navbar a:hover, #navbar a:active, #navbar a:focus {
+  background-color: transparent;
   padding-bottom: 12px !important;
-}
-
-#navbar a.active {
-  color: white;
 }
 
 .inner {
@@ -890,6 +897,11 @@ footer a:hover {
 
 .color-nav {
   background-color: rgb(63, 64, 77);
+  transition: background-color 0.2s ease-out;
+}
+
+.color-nav.top {
+  background-color: transparent;
 }
 
 a, a:visited {
@@ -1007,7 +1019,7 @@ a.letscrum-button:hover, a.letscrum-button.active {
 }
 
 .heroimage {
-  background-image: url('../images/background.png');
+  background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

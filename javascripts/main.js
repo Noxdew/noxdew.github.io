@@ -2,6 +2,19 @@ $(function() {
     $("#year").text(new Date().getFullYear());
 });
 
+$(function () {
+    var callback = function () {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop == 0) {
+            $("#navbar").addClass("top");
+        } else {
+            $("#navbar").removeClass("top");
+        }
+    };
+    $(window).scroll(callback);
+    callback();
+});
+
 // Animate
 $(function() {
     $(document).on("scroll", onScroll);
