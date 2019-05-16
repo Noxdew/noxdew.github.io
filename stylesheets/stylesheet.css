@@ -759,7 +759,7 @@ footer {
   padding-bottom: 30px;
   font-size: 13px;
   color: #aaa;
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  background: transparent;
 }
 
 footer a {
